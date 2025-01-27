@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <title>Mareta - The Power of Quotes</title>
+  </head>
+  <body class="bg-gray-100 font-sans text-gray-900 ">
+    <header class="border-b bg-white shadow-sm">
+      <div
+        class="container mx-auto px-4 py-4 flex items-center justify-between"
+      >
+        <a href="/" class="flex items-center gap-2">
+          <img
+            src="https://i.pinimg.com/736x/89/8b/36/898b369283d8ed9256fcea394a485728.jpg"
+            alt="MetaBlog Logo"
+            class="w-10 h-10 rounded-full"
+          />
+          <span class="text-2xl font-bold text-gray-900">MetaBlog</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6">
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Home</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Blog</a
+          >
+          <a
+            href="singlepage.html"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Single Post</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Pages</a
+          >
+          <a
+            href="#"
+            class="text-gray-600 hover:text-gray-900 transition-colors"
+            >Contact</a
+          >
+        </nav>
+        <div class="flex items-center gap-4">
+          <div class="relative hidden md:block">
+            <input
+              type="search"
+              placeholder="Search"
+              class="w-64 pl-4 pr-10 py-2 border rounded-full text-sm text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+            />
+            <span
+              class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400"
+              >🔍</span
+            >
+          </div>
+          <button
+            id="themetoggle"
+            class="p-2 rounded-full border border-gray-300 hover:bg-gray-100 transition-colors"
+            aria-label="Toggle Theme"
+          >
+            🌗
+          </button>
+        </div>
+      </div>
+    </header>
+    <main class="w-[80%] mx-auto"  >
+    <section class="py-10">
+      <div class="container mx-auto px-4 mb-[5%]">
+        <div class="relative">
+          <img
+            src="https://i.pinimg.com/736x/7a/8a/31/7a8a31eebadddfcb2ceb6ec944551aed.jpg"
+            alt="Hero"
+            class="rounded-lg shadow-lg w-full h-[500px] object-cover"
+          />
+          <div
+            class="absolute bottom-[-8%] left-[5%] bg-white p-6 sm:p-10 rounded-lg shadow-lg w-full sm:w-[33%]"
+          >
+            <span class="text-[#1679AB] text-sm uppercase font-bold">
+              Quotes
+            </span>
+            <h2 class="text-2xl font-bold text-gray-800 mt-2">
+              The Power of Words: How Quotes Shape Our Understanding of Life
+            </h2>
+            <div class="flex p-2 items-center">
+              <img
+                src="https://i.pinimg.com/736x/a0/94/98/a094986c87bf6a82d375544f307bc037.jpg"
+                alt="user"
+                class="rounded-full w-6 h-6"
+              />
+              <p class="text-gray-600 text-sm mt-1 ml-2">
+                Rose &middot; August 20, 2022
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      
+    <section class="container mx-auto px-4 mb-16">
+      <div
+        class="bg-white border border-gray-300 rounded-xl overflow-hidden shadow-lg"
+      >
+        <img
+          src="https://i.pinimg.com/736x/a2/2b/e8/a22be88fb1815d87d6ca41892be3b4bd.jpg"
+          alt="Advertisement Banner"
+          class="w-full h-96 object-cover"
+        />
+        <div class="p-8 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">
+            Advertise with Us
+          </h3>
+          <p class="text-sm text-gray-600 mb-6">
+            Showcase your brand to thousands of daily readers. Our premium ad
+            space can take your visibility to new heights.
+          </p>
+          <button
+            class="bg-[#1679AB] text-white font-semibold px-10 py-2 rounded-[16px] hover:bg-[#1F509A] transition duration-300"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="container mx-auto px-4 mb-12">
+      <h2 class="text-3xl font-extrabold mb-8 text-gray-800">Latest Quotes</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64">
+            <img
+              src="https://i.pinimg.com/736x/be/23/f0/be23f0d33feec07e32f361bf4aa713de.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+           <div class="p-5">
+          <span class="text-[#1679AB] text-sm block">Life Wisdom</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">The Art of Finding Inspiration in Everyday Moments</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/d0/c5/df/d0c5df67a15ce1c137115808e5c2a9ab.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>Yuje</span>
+            </div>
+            <span>August 24, 2023</span>
+          </div>
+        </div>
+        </article>
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64 ">
+            <img
+              src="https://i.pinimg.com/736x/d8/4f/da/d84fda083fe75c77cee6866ff96a4836.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+          <span class="text-[#1679AB] text-sm block">Motivation</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">The Key to Success: Never Stop Moving Forward</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/e1/53/2e/e1532e7cb842c3a373da194ec4e1eb1f.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>Charita</span>
+            </div>
+            <span>September 12, 2023</span>
+          </div>
+        </div>
+        </article>
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64 ">
+            <img
+              src="https://i.pinimg.com/736x/04/75/62/0475622ce927f2b34225964bfa15cd33.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div  class="p-5">
+          <span class="text-[#1679AB] text-sm block">Philosophy</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">The Art of Being Present in the Moment</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/1b/8b/5c/1b8b5c7d2a19e7c64cb025e9a8dc124c.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>Karina</span>
+            </div>
+            <span>October 2, 2023</span>
+          </div>
+        </div>
+        </article>
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64">
+            <img
+              src="https://i.pinimg.com/736x/59/71/58/5971589122a5082a9b73f0f1409c9c97.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div>
+            <div class="p-4">
+          <span class="text-[#1679AB] text-sm block">Success</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">Success Comes from Consistency, Not Perfection</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/4e/1c/44/4e1c44063cdc6ad58fef04f749899646.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>winter</span>
+            </div>
+            <span>November 1, 2023</span>
+          </div>
+        </div>
+      </div>
+        </article>
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64">
+            <img
+              src="https://i.pinimg.com/736x/52/1a/8a/521a8a04f47a7c68af059f461b81271f.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-4">
+          <span class="text-[#1679AB] text-sm block">Life Wisdom</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">The Power of Silence: Why Less is Often More</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/7a/4d/04/7a4d0440ebc88e3704298e4e48942ab5.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>Jake</span>
+            </div>
+            <span>December 15, 2023</span>
+          </div>
+        </div>
+        </article>
+        <article
+          key="{index}"
+          class="group rounded-lg overflow-hidden shadow-md transition-transform transform hover:scale-105"
+        >
+          <div class="relative h-64 ">
+            <img
+              src="https://i.pinimg.com/736x/48/ff/2b/48ff2b88cf19ad2e2a539404a332bdfa.jpg"
+              alt="Quote background"
+              class="w-full h-full object-cover"
+            />
+          </div>
+          <div class="p-5">
+          <span class="text-[#1679AB] text-sm block">Motivation</span>
+          <h3
+            class="text-xl font-semibold mb-2 text-gray-800 hover:text-[#1679AB] transition-colors"
+          >
+            <a href="#">Believe in Yourself: The First Step Towards Success</a>
+          </h3>
+          <div class="flex items-center gap-4 text-sm text-gray-600">
+            <div class="flex items-center gap-2">
+              <img src="https://i.pinimg.com/736x/de/3f/a2/de3fa219381a9ed59010eb1977969cb4.jpg" class="w-6 h-6 bg-gray-200 rounded-full object-cover"></img>
+              <span>Jay</span>
+            </div>
+            <span>January 3, 2024</span>
+          </div>
+        </div>
+        </article>
+      </div>
+      <div class="text-center mt-12">
+        <a
+          href="#"
+          class="px-6 py-3 border-gray-300 rounded-full text-gray-800 hover:bg-gray-100 transition-colors"
+        >
+          View All Quotes
+        </a>
+      </div>
+    </section>
+    <section class="container mx-auto px-4 mb-16">
+      <div
+        class="bg-white border border-gray-300 rounded-xl overflow-hidden shadow-lg"
+      >
+        <!-- Larger Image -->
+        <img
+          src="https://i.pinimg.com/736x/94/ba/ff/94baff6718821a66974e73d1d9cdd715.jpg"
+          alt="Advertisement Banner"
+          class="w-full h-96 object-cover"
+        />
+        <div class="p-8 text-center">
+          <h3 class="text-2xl font-bold text-gray-800 mb-4">
+            Advertise with Us
+          </h3>
+          <p class="text-sm text-gray-600 mb-6">
+            Showcase your brand to thousands of daily readers. Our premium ad
+            space can take your visibility to new heights.
+          </p>
+          <button
+            class="bg-[#1679AB] text-white font-semibold px-10 py-2 rounded-[16px] hover:bg-[#1F509A] transition duration-300"
+          >
+            Learn More
+          </button>
+        </div>
+      </div>
+    </section>
+  </main>
+    <footer class="bg-gray-50 mt-16">
+        <div class="container mx-auto px-4 py-12">
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+            
+            <div>
+              <h3 class="font-bold mb-4 text-gray-900">About</h3>
+              <p class="text-gray-600 text-sm">
+                MaretaBlog celebrates the transformative power of quotes, sharing
+                insights that inspire and uplift.
+              </p>
+              <p class="text-sm mt-4 text-gray-600">
+                Email: info@maretablog.com<br />
+                Phone: +855 99757115
+              </p>
+            </div>
+  
+            
+            <div>
+              <h3 class="font-bold mb-4 text-gray-900">Quick Links</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="font-bold mb-4 text-gray-900">Categories</h3>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Motivation</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Wisdom</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-600 hover:text-gray-900 transition-colors"
+                    >Inspiration</a
+                  >
+                </li>
+              </ul>
+            </div>
+  
+            <div>
+              <h3 class="font-bold mb-4 text-gray-900">Weekly Newsletter</h3>
+              <p class="text-sm text-gray-600 mb-4">
+                Get inspiring quotes and articles delivered to your inbox weekly.
+              </p>
+              <form class="space-y-4">
+                <input
+                  type="email"
+                  placeholder="Your Email"
+                  class="w-full px-4 py-2 border rounded focus:outline-none focus:ring-2 focus:ring-blue-500 transition-all"
+                />
+                <button
+                  type="submit"
+                  class="w-full bg-[#1679AB] text-white px-4 py-2 rounded-[16px] hover:bg-[#1F509A] transition-colors"
+                >
+                  Subscribe
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="border-t">
+          <div class="container mx-auto px-4 py-4">
+            <div
+              class="flex flex-col md:flex-row justify-between items-center gap-4"
+            >
+            <a href="/" class="flex items-center gap-2">
+              <img
+                src="https://i.pinimg.com/736x/89/8b/36/898b369283d8ed9256fcea394a485728.jpg"
+                alt="MetaBlog Logo"
+                class="w-10 h-10 rounded-full"
+              />
+              <span class="text-2xl font-bold text-gray-900">MetaBlog</span>
+            </a>
+              <div class="text-sm text-gray-600">
+                © Copyright 2025. All Rights Reserved.
+              </div>
+              <div class="flex gap-4 text-sm">
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-gray-900 transition-colors"
+                  >Terms of Use</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-gray-900 transition-colors"
+                  >Privacy Policy</a
+                >
+                <a
+                  href="#"
+                  class="text-gray-600 hover:text-gray-900 transition-colors"
+                  >Cookie Policy</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- <script>
+        // Configure Tailwind to enable dark mode
+       tailwind.config = {
+         darkMode: "class", // Enable dark mode using the 'class' strategy
+       };
+         // Function to toggle dark mode
+         function themetoggle() {
+             const html = document.documentElement;
+             html.classList.toggle("dark");
+             localStorage.setItem("theme", html.classList.contains("dark") ? "dark" : "light");
+         }
+ 
+         // Check for saved theme preference on page load
+         if (localStorage.getItem("theme") === "dark") {
+             document.documentElement.classList.add("dark");
+         } else {
+             document.documentElement.classList.remove("dark");
+         }
+     </script> -->
+ 
+  </body>
+</html>
